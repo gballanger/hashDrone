@@ -9,6 +9,7 @@ public class Order {
 	public List<Integer> orders;
 	
 	public Order(Integer id, Point point) {
+		point.parent = this;
 		this.id = id;
 		this.dest = point;
 		this.orders = new ArrayList<Integer>();

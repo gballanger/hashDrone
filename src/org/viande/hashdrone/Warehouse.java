@@ -10,6 +10,7 @@ public class Warehouse {
 	
 	public Warehouse(Integer id, Point position)
 	{
+		position.parent = this;
 		this.productsList = new ArrayList<Integer>();
 		this.id = id;
 		this.place = position;
