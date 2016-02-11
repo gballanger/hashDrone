@@ -1,5 +1,10 @@
 package org.viande.hashdrone;
 
-public class Warehouse {
+import java.util.List;
 
+public class Warehouse {
+	public Point place;
+	public List<Integer> products;
+	public Integer warehouse_id = 0;
+	public Integer nbProducts = 0;
 }
